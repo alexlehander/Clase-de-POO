@@ -63,7 +63,7 @@ Deporte::~Deporte () {
 }
 
 Terrestre::~Terrestre () {
-	categorias--;
+    categorias--;
     cout << "Se destruyo un objeto terrestre." << endl;
     Deporte::print();
 }
@@ -74,7 +74,7 @@ Auxiliar::~Auxiliar () {
 }
 
 void Deporte::imprimir ()  {
-	cout << "Nombre:          " << nombre << endl;
+    cout << "Nombre:          " << nombre << endl;
     cout << "Jugadores:       " << jugadores << endl;
     cout << "Tiempo:          " << tiempo << endl;
     cout << "Categorias:      " << categorias << endl;
@@ -85,18 +85,18 @@ void Deporte::print () {
 }
 
 void Terrestre::imprimir ()  {
-	Deporte::imprimir();
-	cout << "Terreno:         " << terreno << endl;
+    Deporte::imprimir();
+    cout << "Terreno:         " << terreno << endl;
 }
 
 void Auxiliar::imprimir ()  {
-	Terrestre::imprimir();
-	cout << "Herramienta:     " << nivel << endl << endl;
+    Terrestre::imprimir();
+    cout << "Herramienta:     " << nivel << endl << endl;
 }
 
 void Auxiliar::actualizar() {
-	cout << "Se cambio tu objeto auxiliar..." << endl;
-	//nombre  = "Lucha";
+    cout << "Se cambio tu objeto auxiliar..." << endl;
+    //nombre  = "Lucha";
     //jugadores    = 2;
     tiempo  = 10;
     //terreno = "Rocoso";
@@ -104,8 +104,8 @@ void Auxiliar::actualizar() {
 }
 
 int main () {
-	Deporte::print();
-	Deporte d1("Soocer",11,60);
+    Deporte::print();
+    Deporte d1("Soocer",11,60);
     d1.imprimir();
     cout << endl;
     Terrestre t1("Footbal",22,90,"Plano");
